@@ -26,7 +26,7 @@ phases:
           --parameters commands='[
             "sudo mkdir -p /opt/app",
             "sudo aws s3 cp s3://'"$ARTIFACT_BUCKET"'/app.jar /opt/app/app.jar",
-            "sudo tee /etc/systemd/system/cicd-challenge-app.service > /dev/null << EOF\n[Unit]\nDescription=Java Web App\nAfter=network.target\n\n[Service]\nExecStart=/usr/bin/java -jar /opt/app/app.jar --server.port=8080\nRestart=always\nUser=ec2-user\n\n[Install]\nWantedBy=multi-user.target\nEOF",
+            "sudo tee /etc/systemd/system/cicd-challenge-app.service > /dev/null << EOF\n[Unit]\nDescription=Java Web App For The CICD Challenge\nAfter=network.target\n\n[Service]\nExecStart=/usr/bin/java -jar /opt/app/app.jar --server.port=8080\nRestart=always\nUser=ec2-user\n\n[Install]\nWantedBy=multi-user.target\nEOF",
             "sudo systemctl daemon-reload",
             "sudo systemctl enable cicd-challenge-app",
             "sudo systemctl restart cicd-challenge-app"
