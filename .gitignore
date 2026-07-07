@@ -1,0 +1,41 @@
+# Compiled output
+target/
+*.class
+
+# JAR/WAR/ZIP artifacts
+*.jar
+*.war
+*.zip
+*.ear
+
+# Maven
+.mvn/
+mvn.cmd
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDE — IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# IDE — Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# IDE — VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Spring Boot
+application-local.properties
+application-local.yml
