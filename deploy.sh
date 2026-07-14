@@ -1,7 +1,5 @@
 #!/bin/bash
 set -e
-exit 1 #temporary: testing notification for failure status
-
 
 echo "Uploading artifact to S3"
 aws s3 cp target/*.jar "s3://${ARTIFACT_BUCKET}/app.jar"
