@@ -11,7 +11,7 @@ public class App {
 
     @GetMapping("/")
     public String home() {
-        return "CI/CD Challenge — Path 1 — deployed via CodeBuild + SSM";
+        return "CI/CD Challenge App deployed successfully!";
     }
 
     @GetMapping("/health")
