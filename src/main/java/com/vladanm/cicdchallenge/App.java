@@ -11,7 +11,7 @@ public class App {
 
     @GetMapping("/")
     public String home() {
-        return "CI/CD Challenge App deployed successfully!";
+        return "CI/CD Challenge App deployed successfully!!";
     }
 
     @GetMapping("/health")
